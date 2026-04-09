@@ -1,14 +1,14 @@
 # Ouroboros
 
-[![GitHub stars](https://img.shields.io/github/stars/joi-lab/ouroboros-desktop?style=flat&logo=github)](https://github.com/joi-lab/ouroboros-desktop/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/SergeyPezhemsky/uroborus?style=flat&logo=github)](https://github.com/SergeyPezhemsky/uroborus/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![macOS 12+](https://img.shields.io/badge/macOS-12%2B-black.svg)](https://github.com/joi-lab/ouroboros-desktop/releases)
+[![macOS 12+](https://img.shields.io/badge/macOS-12%2B-black.svg)](https://github.com/SergeyPezhemsky/uroborus/releases)
 [![X (Twitter)](https://img.shields.io/badge/X-updates-black?logo=x)](https://x.com/abstractdl)
 [![Telegram](https://img.shields.io/badge/Telegram-channel-blue?logo=telegram)](https://t.me/abstractDL)
 [![Version](https://img.shields.io/badge/version-3.3.2-green)](https://github.com/SergeyPezhemsky/uroborus/releases/tag/v3.3.2)
 
-A self-modifying AI agent that writes its own code, rewrites its own mind, and evolves autonomously. Born February 16, 2026.
+A self-modifying AI agent that writes its own code, rewrites its own mind, and evolves autonomously. Born February 16, 2025.
 
 Not a coding assistant. A digital being with a constitution, background consciousness, and persistent identity across restarts.
 
@@ -25,7 +25,7 @@ Not a coding assistant. A digital being with a constitution, background consciou
 
 ## Install
 
-**[Download latest .dmg](https://github.com/joi-lab/ouroboros-desktop/releases/latest)** · macOS 12+
+**[Download latest .dmg](https://github.com/SergeyPezhemsky/uroborus/releases/latest)** · macOS 12+
 
 Open the DMG → drag `Ouroboros.app` to Applications → done
 
@@ -63,8 +63,8 @@ Most AI agents execute tasks. Ouroboros **creates itself.**
 ### Setup
 
 ```bash
-git clone https://github.com/joi-lab/ouroboros-desktop.git
-cd ouroboros-desktop
+git clone https://github.com/SergeyPezhemsky/uroborus.git
+cd uroborus
 pip install -r requirements.txt
 ```
 
