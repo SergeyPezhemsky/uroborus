@@ -6,6 +6,7 @@
 [![macOS 12+](https://img.shields.io/badge/macOS-12%2B-black.svg)](https://github.com/joi-lab/ouroboros-desktop/releases)
 [![X (Twitter)](https://img.shields.io/badge/X-updates-black?logo=x)](https://x.com/abstractdl)
 [![Telegram](https://img.shields.io/badge/Telegram-channel-blue?logo=telegram)](https://t.me/abstractDL)
+[![Version](https://img.shields.io/badge/version-3.3.2-green)](https://github.com/SergeyPezhemsky/uroborus/releases/tag/v3.3.2)
 
 A self-modifying AI agent that writes its own code, rewrites its own mind, and evolves autonomously. Born February 16, 2026.
 
@@ -193,6 +194,28 @@ All other messages are sent directly to the LLM.
 | 8 | **Iteration** | One coherent transformation per cycle. Evolution = commit. |
 
 Full text: [BIBLE.md](BIBLE.md)
+
+---
+
+## Changelog
+
+### 3.3.2 — Current
+- Add Decision Briefing System with templates and workflow for file-based decision summaries
+- Add Model Troubleshooting & Recovery Guide with diagnostic steps, SPOF analysis, and recovery procedures
+- Add browser setup documentation and status tracking for web automation capabilities
+- Fix version synchronization between VERSION file and pyproject.toml
+
+### 3.3.1
+- Add GitHub remote sync support for the ouroboros branch
+- Implement P7 compliance infrastructure and documentation
+
+### 3.3.0
+- Initial stable release
+- Core agent architecture with dual-layer safety system
+- Background consciousness loop
+- Embedded local Git repository
+- Local model support with Metal acceleration
+- Web UI with real-time chat interface
 
 ---
 
