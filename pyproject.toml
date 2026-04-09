@@ -1,6 +1,6 @@
 [project]
 name = "ouroboros"
-version = "3.3.2"
+version = "3.3.3"
 description = "Self-creating AI agent with constitution"
 authors = [{name = "Sergey Pezhemsky", email = "sergey@pezhemsky.com"}]
 license = {text = "MIT"}
