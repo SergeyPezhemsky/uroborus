@@ -122,7 +122,7 @@ def get_routes() -> list:
 async def ws_handler(websocket):
     """WebSocket handler."""
     from starlette.websockets import WebSocketDisconnect
-    from supervisor_queues import iter_global_events
+    from supervisor.queues import iter_global_events
     
     await websocket.accept()
     
