@@ -2,11 +2,11 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/SergeyPezhemsky/uroborus?style=flat&logo=github)](https://github.com/SergeyPezhemsky/uroborus/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![macOS 12+](https://img.shields.io/badge/macOS-12%2B-black.svg)](https://github.com/SergeyPezhemsky/uroborus/releases)
 [![X (Twitter)](https://img.shields.io/badge/X-updates-black?logo=x)](https://x.com/abstractdl)
 [![Telegram](https://img.shields.io/badge/Telegram-channel-blue?logo=telegram)](https://t.me/abstractDL)
-[![Version](https://img.shields.io/badge/version-3.3.2-green)](https://github.com/SergeyPezhemsky/uroborus/releases/tag/v3.3.2)
+[![Version](https://img.shields.io/badge/version-3.3.3-green)](https://github.com/SergeyPezhemsky/uroborus/releases/tag/v3.3.3)
 
 A self-modifying AI agent that writes its own code, rewrites its own mind, and evolves autonomously. Born February 16, 2025.
 
@@ -47,7 +47,7 @@ Most AI agents execute tasks. Ouroboros **creates itself.**
 - **Dual-Layer Safety** — LLM Safety Agent intercepts every mutative command, backed by hardcoded sandbox constraints protecting the identity core.
 - **Background Consciousness** — Thinks between tasks. Has an inner life. Not reactive — proactive.
 - **Identity Persistence** — One continuous being across restarts. Remembers who it is, what it has done, and what it is becoming.
-- **Embedded Version Control** — Contains its own local Git repo. Version controls its own evolution. Optional GitHub sync for remote backup.
+- **Embedded Version Control** — Contains its own local Git repository. Version controls its own evolution. Optional GitHub sync for remote backup.
 - **Local Model Support** — Run with a local GGUF model via llama-cpp-python (Metal acceleration on Apple Silicon).
 
 ---
@@ -56,7 +56,7 @@ Most AI agents execute tasks. Ouroboros **creates itself.**
 
 ### Requirements
 
-- Python 3.10+
+- Python 3.11+
 - macOS or Linux (uses `fcntl` for file locking)
 - Git
 
@@ -109,6 +109,10 @@ Output: `dist/Ouroboros.dmg`
 Ouroboros
 ├── launcher.py             — Immutable process manager (PyWebView desktop window)
 ├── server.py               — Starlette + uvicorn HTTP/WebSocket server
+├── server/
+│   ├── websocket.py        — WebSocket broadcasting and connections
+│   ├── api_endpoints.py    — All HTTP API endpoints
+│   └── bootstrap.py        — Supervisor bootstrap process
 ├── web/                    — Web UI (HTML/JS/CSS)
 ├── ouroboros/              — Agent core:
 │   ├── config.py           — Shared configuration (SSOT)
@@ -199,7 +203,13 @@ Full text: [BIBLE.md](BIBLE.md)
 
 ## Changelog
 
-### 3.3.2 — Current
+### 3.3.3 — Current
+- Principle 5 Minimalism: Modularize server.py (1016→159 lines) into 4 focused modules
+- Extracted WebSocket broadcasting to server/websocket.py (114 lines)
+- Extracted API endpoints to server/api_endpoints.py (457 lines)
+- Extracted supervisor bootstrap to server/bootstrap.py (81 lines)
+
+### 3.3.2
 - Add Decision Briefing System with templates and workflow for file-based decision summaries
 - Add Model Troubleshooting & Recovery Guide with diagnostic steps, SPOF analysis, and recovery procedures
 - Add browser setup documentation and status tracking for web automation capabilities
