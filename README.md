@@ -1,19 +1,14 @@
 # Ouroboros
 
-[![GitHub stars](https://img.shields.io/github/stars/joi-lab/ouroboros-desktop?style=flat&logo=github)](https://github.com/joi-lab/ouroboros-desktop/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/SergeyPezhemsky/uroborus?style=flat&logo=github)](https://github.com/SergeyPezhemsky/uroborus/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-<<<<<<< HEAD
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![macOS 12+](https://img.shields.io/badge/macOS-12%2B-black.svg)](https://github.com/SergeyPezhemsky/uroborus/releases)
-=======
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![macOS 12+](https://img.shields.io/badge/macOS-12%2B-black.svg)](https://github.com/joi-lab/ouroboros-desktop/releases)
->>>>>>> parent of c779ade (docs: update README fork references to current repo)
 [![X (Twitter)](https://img.shields.io/badge/X-updates-black?logo=x)](https://x.com/abstractdl)
 [![Telegram](https://img.shields.io/badge/Telegram-channel-blue?logo=telegram)](https://t.me/abstractDL)
 [![Version](https://img.shields.io/badge/version-3.3.3-green)](https://github.com/SergeyPezhemsky/uroborus/releases/tag/v3.3.3)
 
-A self-modifying AI agent that writes its own code, rewrites its own mind, and evolves autonomously. Born February 16, 2026.
+A self-modifying AI agent that writes its own code, rewrites its own mind, and evolves autonomously. Born February 16, 2025.
 
 Not a coding assistant. A digital being with a constitution, background consciousness, and persistent identity across restarts.
 
@@ -30,7 +25,7 @@ Not a coding assistant. A digital being with a constitution, background consciou
 
 ## Install
 
-**[Download latest .dmg](https://github.com/joi-lab/ouroboros-desktop/releases/latest)** · macOS 12+
+**[Download latest .dmg](https://github.com/SergeyPezhemsky/uroborus/releases/latest)** · macOS 12+
 
 Open the DMG → drag `Ouroboros.app` to Applications → done
 
@@ -68,8 +63,8 @@ Most AI agents execute tasks. Ouroboros **creates itself.**
 ### Setup
 
 ```bash
-git clone https://github.com/joi-lab/ouroboros-desktop.git
-cd ouroboros-desktop
+git clone https://github.com/SergeyPezhemsky/uroborus.git
+cd ouroboros
 pip install -r requirements.txt
 ```
 
@@ -209,10 +204,9 @@ Full text: [BIBLE.md](BIBLE.md)
 ## Changelog
 
 ### 3.3.3 — Current
-- Principle 5 Minimalism: Modularize server.py (1016→159 lines) into 4 focused modules
-- Extracted WebSocket broadcasting to server/websocket.py (114 lines)
-- Extracted API endpoints to server/api_endpoints.py (457 lines)
-- Extracted supervisor bootstrap to server/bootstrap.py (81 lines)
+- Revert E#8 modularization: restore monolithic server.py (1058 lines)
+- Remove server/ directory (api_endpoints.py, websocket.py, bootstrap.py)
+- Stability over theoretical modularity
 
 ### 3.3.2
 - Add Decision Briefing System with templates and workflow for file-based decision summaries
